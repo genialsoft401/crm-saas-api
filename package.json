@@ -1,0 +1,57 @@
+{
+  "name": "crm-saas-api",
+  "version": "1.0.0",
+  "description": "API CRM SaaS Enterprise - Gestão de Empresas, Clientes, Faturação e Dashboards",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "lint": "eslint src --fix",
+    "migrate": "node src/database/migrations/migrate.js",
+    "seed": "node src/database/seeds/seed.js"
+  },
+  "keywords": [
+    "crm",
+    "saas",
+    "api",
+    "enterprise",
+    "nodejs",
+    "express",
+    "mysql"
+  ],
+  "author": "Genialsoft",
+  "license": "PROPRIETARY",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.1.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "node-cache": "^5.1.2",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.7",
+    "redis": "^4.6.13",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.54.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
